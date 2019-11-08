@@ -4,7 +4,7 @@ const MongoClient = require('mongodb').MongoClient;
 let url = "mongodb://localhost:27017/students";
 
 if (process.env.PORT)
-    url = "mongodb+srv://examcramuser:javaexamcramuser123@examcram-jho6d.mongodb.net/test?retryWrites=true&w=majority";
+    url = "SECRET DATABASE URL";
 
 methods.createNewExamCram = function (name,pass) {
     MongoClient.connect(url, (err, db) => {
