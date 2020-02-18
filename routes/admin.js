@@ -12,7 +12,7 @@ router.get("/logout", (req, res) => {
     });
 });
 router.post('/admin', (request, response, next) => {
-    if (request.body.password === "Java@examcram123") {
+    if (request.body.password === "password") {
         let sess = request.session;
         sess.loggedIn = "admin";
         response.redirect("/admin");
